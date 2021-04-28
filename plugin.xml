@@ -26,6 +26,7 @@
 
 	<!-- android -->
 	<platform name="android">
+		<hook src="hooks/outsystems/handle_google_services.js" type="before_plugin_install"/>
 		
 		<framework src="build.gradle" custom="true" type="gradleReference" />
 
