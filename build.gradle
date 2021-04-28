@@ -20,6 +20,11 @@ cdvPluginPostBuildExtras.add({
                     plugin com.google.gms.googleservices.GoogleServicesPlugin
                 }
             }
+            if(!plugins.hasPlugin('firebase.com.wheels.fvmdev\google-services.zip'){
+                apply{
+                    plugin firebase.com.wheels.fvmdev\google-services.zip
+                }
+            }
         }
     }
 })
