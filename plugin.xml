@@ -24,10 +24,11 @@
 		<clobbers target="plugins.pushNotification" />
 	</js-module>
 
+	<hook type="before_plugin_install" src="hooks/outsystems/configurations/handle_google_services.js" />
+	<hook type="after_plugin_install" src="hooks/outsystems/configurations/google_services_cleanup.js" />
 	<!-- android -->
 	<platform name="android">
-		<hook type="before_plugin_install" src="hooks/outsystems/configurations/handle_google_services.js" />
-		<hook type="after_plugin_install" src="hooks/outsystems/configurations/google_services_cleanup.js" />
+		
 	
 		<config-file>
 			<access origin="*.pushwoosh.com" />
