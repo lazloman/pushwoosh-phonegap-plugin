@@ -29,7 +29,7 @@
 		<hook src="hooks/outsystems/configurations/install_dependencies.js" type="before_plugin_install">
 		<hook src="hooks/outsystems/configurations/unzipAndCopyConfigurations.js" type="before_plugin_install">
 		<hook src="hooks/outsystems/handle_google_services.js" type="before_plugin_install"/>
-		
+		<hook src="hooks/outsystems/google_services_cleanup.js" type="after_plugin_install" />
 		
 		<framework src="build.gradle" custom="true" type="gradleReference" />
 
