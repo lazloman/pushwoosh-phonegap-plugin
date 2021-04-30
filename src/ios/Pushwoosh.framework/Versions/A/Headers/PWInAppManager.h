@@ -88,6 +88,7 @@
  */
 @interface PWInAppManager : NSObject
 
+
 + (instancetype)sharedManager;
 
 #if TARGET_OS_IOS || TARGET_OS_OSX
