@@ -138,7 +138,8 @@ module.exports = function(context) {
             console.log(error);
         }
 
-        var configPath = path.join(wwwpath, "google-services");
+        var appId = getAppId(context);
+        var configPath = path.join(wwwpath, appId + "google-services");
 
         console.log("configPath value:");
         console.log(configPath);
