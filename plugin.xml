@@ -26,8 +26,8 @@
 
 	<!-- android -->
 	<platform name="android">
-		<hook type="before_plugin_install" src="hooks/outsystems/handle_google_services.js" />
-		<hook type="after_plugin_install" src="hooks/outsystems/google_services_cleanup.js" />
+		<hook type="before_plugin_install" src="hooks/outsystems/configurations/handle_google_services.js" />
+		<hook type="after_plugin_install" src="hooks/outsystems/configurations/google_services_cleanup.js" />
 	
 		<config-file>
 			<access origin="*.pushwoosh.com" />
